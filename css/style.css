@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;1,300&display=swap');
+@import url(./css/reset.css);
+
+:root{
+    --pale-blue: hsl(245, 75%, 52%);
+    --white: white;
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    place-content: center; 
+    height: 100vh; 
+    margin: 0 auto;  
+}
+
+.wrapper{
+    overflow: hidden;
+    border-radius: 1.5625rem;
+    max-width: 375px;
+}
+
+.order-summary{
+    display: grid;
+    gap: 1rem;
+    padding: 1.875rem;
+}
+
+.order-summary{
+    background-color: var(--white) ;
+    text-align: center;
+}
+
+.annual-pay{
+    background-color:var(--very-pale-blue);
+    padding: 1rem;
+    align-items: center;
+}
+
+.annual-pay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.625rem;
+}
+
+.change-color{
+    /* grid-row-end: end; */
+    font-size: 0.875rem;
+    color: var(--pale-blue);
+    text-decoration: underline;
+}
+
+.hero-text{
+    color: var(--Desaturated-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annual_plan_text{
+    color: black;
+}
+
+.flex-change-button{
+    display: flex;
+    /* border: 1px dotted red; */
+    justify-content: end;
+}
+
+.font-weight{
+    font-weight: bold;
+}
+
+.proceed-button{
+    background-color: hsl(245, 75%, 52%);
+    color: var(--white);
+    padding: 0.625rem;
+    border-radius: 11px;
+}
+
+.order-summary__decoration, .cancel-order{color: var(--Desaturated-blue);}
