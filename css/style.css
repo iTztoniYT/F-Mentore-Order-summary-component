@@ -83,6 +83,7 @@ body{
     color: var(--white);
     padding: 0.625rem;
     border-radius: 11px;
+    border: none;
 }
 
 .order-summary__decoration, .cancel-order{color: var(--Desaturated-blue);}
